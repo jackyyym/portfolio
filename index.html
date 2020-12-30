@@ -5,7 +5,8 @@
 	<title>My Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="./dist/spectre.min.css">
+	<link rel="stylesheet" href="./dist/spectre.css">
+	<link rel="stylesheet" href="./dist/spectre-exp.css">
 	<style>
 		.card {
 			margin-top: 2rem;
@@ -18,59 +19,54 @@
 
 		<div class="navbar-section">	
 			<a href="#" class="navbar-brand text-secondary mr-2"><span class="text-large text-bold">YourSite</span></a>
-			<a href="#" class="btn btn-link text-secondary">My Work</a> 
-			<a href="#" class="btn btn-link text-secondary">About</a> 
+			<a href="./my-work.html" class="btn btn-link text-secondary">My Work</a> 
+			<a href="./about.html" class="btn btn-link text-secondary">About</a> 
 			<a href="#" class="btn btn-link text-secondary">Contact</a> 
 		</div>
 	</header>
 
-	<div class="container centered">
-		<div class="columns">
-			<div class="column col-6 col-xs-12">
-				<div class="card">
-					<div class="card-header">
-						<div class="card-title h5">Toon Water Shader</div>
-					</div>
-					<div class="card-body">
-						<div class="card-image"><img class="img-responsive" src="./img/mother3.jpg" alt="Water Shader Img"></div>
-						A water shader inspired by GameCube-era Nintendo games. Made in Unity ShaderLab.
-					</div>
-				</div>
+	<div class="container centered" style="widows: 70%; max-width:1000px; min-width: 300px;">
+		<div class="carousel">
+			<!-- carousel locator -->
+			<input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
+			<input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
+			<input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
+			<input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
+			
+			<!-- carousel container -->
+			<div class="carousel-container">
+			  <!-- carousel item -->
+			  <figure class="carousel-item">
+				<label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
+				<label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
+				<img class="img-responsive rounded" src="./img/mother3.jpg" alt="">
+			  </figure>
+			  <figure class="carousel-item">
+				<label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
+				<label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
+				<img class="img-responsive rounded" src="./img/borthday.jpg" alt="">
+			  </figure>
+			  <figure class="carousel-item">
+				<label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
+				<label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
+				<img class="img-responsive rounded" src="./img/mother3.jpg" alt="">
+			  </figure>
+			  <figure class="carousel-item">
+				<label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
+				<label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
+				<img class="img-responsive rounded" src="./img/borthday.jpg" alt="">
+			  </figure>
 			</div>
-			<div class="column col-6 col-xs-12">
-				<div class="card">
-					<div class="card-header">
-						<div class="card-title h5">Toon Water Shader</div>
-					</div>
-					<div class="card-body">
-						<div class="card-image"><img class="img-responsive" src="./img/mother3.jpg" alt="Water Shader Img"></div>
-						A water shader inspired by GameCube-era Nintendo games. Made in Unity ShaderLab.
-					</div>
-				</div>
+			<!-- carousel navigation -->
+			<div class="carousel-nav">
+			  <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+			  <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+			  <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+			  <label class="nav-item text-hide c-hand" for="slide-4">4</label>
 			</div>
-			<div class="column col-6 col-xs-12">
-				<div class="card">
-					<div class="card-header">
-						<div class="card-title h5">Toon Water Shader</div>
-					</div>
-					<div class="card-body">
-						<div class="card-image"><img class="img-responsive" src="./img/mother3.jpg" alt="Water Shader Img"></div>
-						A water shader inspired by GameCube-era Nintendo games. Made in Unity ShaderLab.
-					</div>
-				</div>
-			</div>
-			<div class="column col-6 col-xs-12">
-				<div class="card">
-					<div class="card-header">
-						<div class="card-title h5">Toon Water Shader</div>
-					</div>
-					<div class="card-body">
-						<div class="card-image"><img class="img-responsive" src="./img/mother3.jpg" alt="Water Shader Img"></div>
-						A water shader inspired by GameCube-era Nintendo games. Made in Unity ShaderLab.
-					</div>
-				</div>
-			</div>
-
+		</div>
+	</div>
+	
 	<footer>
 	</footer>
 </body>

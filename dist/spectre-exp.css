@@ -279,7 +279,7 @@
 .carousel .carousel-locator:nth-of-type(6):checked ~ .carousel-container .carousel-item:nth-of-type(6),
 .carousel .carousel-locator:nth-of-type(7):checked ~ .carousel-container .carousel-item:nth-of-type(7),
 .carousel .carousel-locator:nth-of-type(8):checked ~ .carousel-container .carousel-item:nth-of-type(8) {
-  animation: carousel-slidein .75s ease-in-out 1;
+  transition: opacity .75s ease-in-out;
   opacity: 1;
   z-index: 100;
 }
@@ -318,7 +318,7 @@
 }
 
 .carousel .carousel-container .carousel-item {
-  animation: carousel-slideout 1s ease-in-out 1;
+  transition: opacity 1s ease-in-out;
   height: 100%;
   left: 0;
   margin: 0;
