@@ -1,0 +1,16 @@
+.bg-primary {
+	background-color: #20be94 !important;
+}
+.bg-dark {
+	color: #fff;
+	background-color: #222222 !important;
+}
+.bg-dark-alt {
+	color: #fff;
+	background-color: #444444 !important;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #20be94;
+	border-color: #165040;
+}
