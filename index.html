@@ -19,11 +19,9 @@
 	<!-- HEADER  -->
 	<header class="navbar navbar-expand navbar-dark bg-primary shadow">
 		<div class="container pl-4 pr-3">
-			<a class="navbar-brand font-weight-bold" href="./">My Site</a>
+			<a class="navbar-brand font-weight-bold" href="./">Home</a>
 			<div class="collapse navbar-collapse">
 				<div class="navbar-nav">
-
-					<a class="nav-link active" href="my-work">My Work</a>
 					<a class="nav-link active" href="about">About</a>
 				</div>
 			</div>
@@ -35,41 +33,236 @@
 
 		<div class="my-4">
 			<h1 class="text-light font-weight-bold mb-4">Hi! Welcome to my site</h1>
-			<p1 class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing 
-				elit. Duis ullamcorper vehicula facilisis. Morbi sit amet dignissim neque. 
-				Cras in nisl metus. In convallis convallis leo ac pulvinar. Duis maximus 
-				lorem mi, et fringilla erat condimentum in. Aenean nisi mauris, euismod in 
-				augue eget, sollicitudin rutrum lectus. Vivamus euismod turpis nisl, in maximus 
-				nunc pellentesque quis. Mauris sit amet nunc iaculis, tincidunt magna nec, 
-				lobortis velit. Integer hendrerit faucibus mi, eu tincidunt odio feugiat sit 
-				amet. Etiam in diam augue. Aliquam sed neque finibus magna pellentesque cursus. 
-				Morbi venenatis malesuada lacus, vel tempus dui egestas id. </p1>
-
+			<p1 class="text-light">Hi! I'm a recent grad from UMass Lowell with a major in Computer Science and minors in Graphic Design and Mathematics. </p1>
 		</div>
 
-		<div id="showcase" class="carousel slide" data-ride="carousel">
+		<div id="showcase" class="carousel slide my-4" data-interval="7500" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#showcase" data-slide-to="0" class="active"></li>
 				<li data-target="#showcase" data-slide-to="1"></li>
 				<li data-target="#showcase" data-slide-to="2"></li>
 			</ol>
 			
-			<a class="container p-0" href="my-work.html">
+			<div class="container p-0" href="my-work.html">
 				<div class="carousel-inner" style="border-radius: .5rem;">
 					<div class="carousel-item active">
-						<img class="d-block w-100" src="./img/watershader_carousel.png" alt="First slide">
+						<img data-toggle="modal" data-target="#modal_card1" class="d-block w-100 pointer" src="./img/artifact_carousel.png" alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="./img/watershader_carousel.png" alt="Second slide">
+						<img data-toggle="modal" data-target="#modal_card1" class="d-block w-100 pointer" src="./img/watershader_carousel.png" alt="Second slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="./img/watershader_carousel.png" alt="Third slide">
+						<img data-toggle="modal" data-target="#modal_card3" class="d-block w-100 pointer" src="./img/artifact_carousel.png" alt="Third slide">
 					</div>
 				</div>
-			</a>
+			</div>
+		</div>
+
+		<p1 class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing 
+			elit. Duis ullamcorper vehicula facilisis. Morbi sit amet dignissim neque. 
+			Cras in nisl metus. In convallis convallis leo ac pulvinar. Duis maximus 
+			lorem mi, et fringilla erat condimentum in. Aenean nisi mauris, euismod in 
+			augue eget, sollicitudin rutrum lectus. Vivamus euismod turpis nisl, in maximus 
+			nunc pellentesque quis. Mauris sit amet nunc iaculis, tincidunt magna nec, 
+			lobortis velit. Integer hendrerit faucibus mi, eu tincidunt odio feugiat sit 
+			amet. Etiam in diam augue. Aliquam sed neque finibus magna pellentesque cursus. 
+			Morbi venenatis malesuada lacus, vel tempus dui egestas id. </p1>
+
+		<!-- CARDS -->
+		<div class="my-4">
+			<h1 class="text-light font-weight-bold mb-4">My Work</h1>
+			<p1 class="text-light">Hi! Here are some select examples of the work ive done both in and out of school. </p1>
+		</div>
+
+		<div class="row my-4">
+			<div class="col my-auto">
+				<div class="card bg-dark-alt">
+					<img class="card-img-top" src="img/watershader_card.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Toon Water Shader</h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card1">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card bg-dark-alt">
+					<img class="card-img-top" src="img/pleajustice_card.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">The Plea Justice Project</h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-4">
+			<div class="col">
+				<div class="card bg-dark-alt">
+					<img class="card-img-top" src="img/artifact_card.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Artifact</h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card3">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col my-auto">
+				<div class="card bg-dark-alt">
+					<img class="card-img-top" src="img/mother3.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Mine Time</h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card4">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-4">
+			<div class="col">
+				<div class="card bg-dark-alt">
+					<img class="card-img-top" src="img/wcc_card.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Working Class Chameleon</h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card5">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col my-auto">
+				<div class="card bg-dark-alt">
+					<img class="card-img-top" src="img/bomberbird_card.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Bomberbird</h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card6">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Other Works</a>
+
+	</div>
+
+	<!-- MODALS -->
+
+	<!-- TOON WATER SHADER -->
+	<div class="modal fade" id="modal_card1" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLabel">Toon Water Shader</h3>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ExCLY9iTTgg" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	<footer>
+	<!-- ARTIFACT -->
+	<div class="modal fade" id="modal_card3" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLabel">Artifact</h3>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N1RTf4f6lgQ" allowfullscreen></iframe>
+					</div>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/52peqUjmVNg" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MINE TIME -->
+	<div class="modal fade" id="modal_card4" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Mine Time</h5>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6zClhMZA1Lg" allowfullscreen></iframe>
+					  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- WORKING CLASS CHAMELEON -->
+	<div class="modal fade" id="modal_card5" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h5>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lNqJsNSdzhk" allowfullscreen></iframe>
+					  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- BOMBERBIRD -->
+	<div class="modal fade" id="modal_card6" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h5>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C2CYPDAQiQc" allowfullscreen></iframe>
+					  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="bg-dark-alt" style="margin-top:100px">
+		<div class="container p-4" style="height:150px">
+			<a class="text-muted" href="./">Home</a>
+			<span> - </span>
+			<a class="text-muted" href="about">About</a>
+		</div>
 	</footer>
 </body>

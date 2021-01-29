@@ -1,3 +1,5 @@
+/* All the CSS to customize the theme */
+
 .bg-primary {
 	background-color: #20be94 !important;
 }
@@ -13,4 +15,34 @@
 	color: #fff;
 	background-color: #20be94;
 	border-color: #165040;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #189170;
+	border-color: #165040;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #27dbab;
+  border-color: #165040;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+	box-shadow: 0 0 0 0;
+  }
+
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.text-muted {
+	color: #c5c5c5 !important;
+}
+
+.pointer {
+	cursor: pointer;
 }
