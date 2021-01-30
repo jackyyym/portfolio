@@ -10,12 +10,13 @@
 	<link rel="stylesheet" href="./dist/css/theme.css">
 	<script src="./dist/js/bootstrap.min.js"></script>
 	<script>
-		$('#closebtn').click(function(){
+		// Used to stop embedded youtube videos when modal is closed
+		function stopVideos() {
 			$('.embed-responsive-item').each(function(){
 				var _src = $(this).attr("src");
 				$(this).attr("src", _src);
 			});
-		});
+		}
 	</script>
 
 	<style>
@@ -41,7 +42,7 @@
 
 		<div class="my-4">
 			<h1 class="text-light font-weight-bold mb-4">Hi! Welcome to my site</h1>
-			<p1 class="text-light">I'm a recent grad from UMass Lowell with a major in Computer Science and minors in Graphic Design and Mathematics. </p1>
+			
 		</div>
 
 		<div id="showcase" class="carousel slide my-4" data-interval="7500" data-ride="carousel">
@@ -54,7 +55,7 @@
 			<div class="container p-0" href="my-work.html">
 				<div class="carousel-inner" style="border-radius: .5rem;">
 					<div class="carousel-item active">
-						<img data-toggle="modal" data-target="#modal_card1" class="d-block w-100 pointer" src="./img/artifact_carousel.png" alt="First slide">
+						<img data-toggle="modal" data-target="#modal_card3" class="d-block w-100 pointer" src="./img/artifact_carousel.png" alt="First slide">
 					</div>
 					<div class="carousel-item">
 						<img data-toggle="modal" data-target="#modal_card1" class="d-block w-100 pointer" src="./img/watershader_carousel.png" alt="Second slide">
@@ -85,19 +86,19 @@
 		<div class="row my-4">
 			<div class="col">
 				<div class="card bg-dark-alt">
-					<img class="card-img-top" src="img/watershader_card.png" alt="Card image cap">
+					<img data-toggle="modal" data-target="#modal_card1" class="card-img-top pointer" src="img/watershader_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<h5 class="col mb-0">Toon Water Shader</h5>
-						<div class="col-2"><button type="button" id="closebtn" class="btn btn-primary" data-toggle="modal" data-target="#modal_card1">View</a></div>
+						<div class="col-2"><button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal_card1">View</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="col">
 				<div class="card bg-dark-alt">
-					<img class="card-img-top" src="img/pleajustice_card.png" alt="Card image cap">
+					<img data-toggle="modal" data-target="#modal_card2" class="card-img-top pointer" src="img/pleajustice_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<h5 class="col mb-0">The Plea Justice Project</h5>
-						<div class="col-2"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card2">View</a></div>
+						<div class="col-2"><button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal_card2">View</a></div>
 					</div>
 				</div>
 			</div>
@@ -106,19 +107,19 @@
 		<div class="row my-4">
 			<div class="col">
 				<div class="card bg-dark-alt">
-					<img class="card-img-top" src="img/artifact_card.png" alt="Card image cap">
+					<img data-toggle="modal" data-target="#modal_card3" class="card-img-top pointer" src="img/artifact_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<h5 class="col mb-0">Artifact</h5>
-						<div class="col-2"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card3">View</a></div>
+						<div class="col-2"><button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal_card3">View</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="col">
 				<div class="card bg-dark-alt">
-					<img class="card-img-top" src="img/minetime_card.png" alt="Card image cap">
+					<img data-toggle="modal" data-target="#modal_card4" class="card-img-top pointer"" src="img/minetime_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<h5 class="col mb-0">Mine Time</h5>
-						<div class="col-2"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card4">View</a></div>
+						<div class="col-2"><button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal_card4">View</a></div>
 					</div>
 				</div>
 			</div>
@@ -127,19 +128,19 @@
 		<div class="row my-4">
 			<div class="col">
 				<div class="card bg-dark-alt">
-					<img class="card-img-top" src="img/wcc_card.png" alt="Card image cap">
+					<img data-toggle="modal" data-target="#modal_card5" class="card-img-top pointer" src="img/wcc_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<h5 class="col mb-0">Working Class Chameleon</h5>
-						<div class="col-2"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card5">View</a></div>
+						<div class="col-2"><button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal_card5">View</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="col">
 				<div class="card bg-dark-alt">
-					<img class="card-img-top" src="img/bomberbird_card.png" alt="Card image cap">
+					<img data-toggle="modal" data-target="#modal_card6" class="card-img-top pointer" src="img/bomberbird_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<h5 class="col mb-0">Bomberbird</h5>
-						<div class="col-2"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_card6">View</a></div>
+						<div class="col-2"><button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modal_card6">View</a></div>
 					</div>
 				</div>
 			</div>
@@ -154,20 +155,29 @@
 	<!-- TOON WATER SHADER -->
 	<div class="modal fade" id="modal_card1" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content bg-dark-alt">
+			<div class="modal-content bg-dark-alt modal-shadow">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Toon Water Shader</h3>
-					<button type="button" class="close text-light" data-dismiss="modal">
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
+				<div class="modal-body p-4">
+					<div class="embed-responsive embed-responsive-16by9 mb-2">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ExCLY9iTTgg" allowfullscreen></iframe>
 					</div>
+					<p1 class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing 
+						elit. Duis ullamcorper vehicula facilisis. Morbi sit amet dignissim neque. 
+						Cras in nisl metus. In convallis convallis leo ac pulvinar. Duis maximus 
+						lorem mi, et fringilla erat condimentum in. Aenean nisi mauris, euismod in 
+						augue eget, sollicitudin rutrum lectus. Vivamus euismod turpis nisl, in maximus 
+						nunc pellentesque quis. Mauris sit amet nunc iaculis, tincidunt magna nec, 
+						lobortis velit. Integer hendrerit faucibus mi, eu tincidunt odio feugiat sit 
+						amet. Etiam in diam augue. Aliquam sed neque finibus magna pellentesque cursus. 
+						Morbi venenatis malesuada lacus, vel tempus dui egestas id. </p1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
@@ -179,7 +189,7 @@
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">The Plea Justice Project</h3>
-					<button type="button" class="close text-light" data-dismiss="modal">
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -187,7 +197,7 @@
 					pleajustice.org
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
@@ -199,7 +209,7 @@
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Artifact</h3>
-					<button type="button" class="close text-light" data-dismiss="modal">
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -212,7 +222,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
@@ -224,17 +234,17 @@
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Mine Time</h5>
-					<button type="button" class="close text-light" data-dismiss="modal">
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6zClhMZA1Lg" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6zClhMZA1Lg?enablejsapi=1" allowfullscreen></iframe>
 					  </div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" id="closebtn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
@@ -246,7 +256,7 @@
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h5>
-					<button type="button" class="close text-light" data-dismiss="modal">
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -256,7 +266,7 @@
 					  </div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
@@ -268,7 +278,7 @@
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h5>
-					<button type="button" class="close text-light" data-dismiss="modal">
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -278,7 +288,7 @@
 					  </div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
