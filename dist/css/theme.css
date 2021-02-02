@@ -64,3 +64,11 @@
 .pointer {
 	cursor: pointer;
 }
+
+.hover-expand {
+	transition: transform 0.5s ease;
+}
+
+.hover-expand:hover {
+	transform: scaleY(1.05) scaleX(1.05);
+  }
