@@ -45,6 +45,13 @@
 	border-color: #6c747a;
   }
 
+  .btn-xl {
+	padding: .75rem 1.25rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	border-radius: 0.35rem;
+  }
+
 .text-muted {
 	color: #c5c5c5 !important;
 }

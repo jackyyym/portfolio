@@ -145,7 +145,7 @@
 			</div>
 		</div>
 
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Other Works</a>
+		<button type="button" class="btn btn-xl btn-primary float-right" data-toggle="modal" data-target="#modal_other">Other Works</a>
 
 	</div>
 
@@ -198,7 +198,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-fluid mb-3" src="img/pleajustice_modal.png">
+					<img class="img-fluid mb-3" style="border-radius: .5rem;" src="img/pleajustice_modal.png">
 					<p1 class="text-light">This was something I worked on from May 2019 - September 2020. I was in a small team under Professor Miko Wilford and 
 						Professor Misha Rabinovich to develop a tool used to do research on plea deals and plea bargaining. The goal for this project is that any 
 						psychology or criminal justice researchers could utilize it. <br><br>
@@ -263,7 +263,7 @@
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Mine Time</h5>
+					<h3 class="modal-title" id="exampleModalLabel">Mine Time</h3>
 					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
@@ -292,7 +292,7 @@
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h5>
+					<h3 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h3>
 					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
@@ -318,7 +318,7 @@
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h5>
+					<h3 class="modal-title" id="exampleModalLabel">Bomerbird</h3>
 					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
@@ -343,12 +343,78 @@
 		</div>
 	</div>
 
+	<!-- OTHER WORKS -->
+	<div class="modal fade" id="modal_other" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLabel">Other Works</h3>
+					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="card bg-dark-alt mb-3" style="border: 1px solid #e9ecef;">
+						<div class="modal-header" style="border-bottom: 0;">
+							<h5 class="col mb-0">Snake Shooter</h5>
+						</div>
+						<img class="card-img-top" src="img/snakegame.png" alt="Card image cap">
+						<div class="modal-body">
+							<p1 class="text-light">
+								These are some assets that I created in Adobe Illustrator for a mobile game that my cousin was developing. This game would be somewhere between 
+								a Snake Game and a Tower Defense game, where you would pilot your snake around the map using your various towers to shoot at enemies. You could 
+								spend currency to add new segments to your body, as well as upgrade existing ones.
+							</p1>
+						</div>
+					</div>
+
+					<div class="card bg-dark-alt mb-3" style="border: 1px solid #e9ecef;">
+						<div class="modal-header" style="border-bottom: 0;">
+							<h5 class="col mb-0">Kopaka's Ice Sword</h5>
+						</div>
+						<img class="card-img-top" src="img/kopakasword.png" alt="Card image cap">
+						<div class="modal-body">
+							<p1 class="text-light">
+								This is a Bioncile piece that I modeled in Autodesk Maya for my 3D Modeling class. I own one of these pieces so I used that as
+								my primary reference, as well as using a few pictures of the sword.
+							</p1>
+						</div>
+					</div>
+
+					<div class="card bg-dark-alt mb-3" style="border: 1px solid #e9ecef;">
+						<div class="modal-header" style="border-bottom: 0;">
+							<h5 class="col mb-0">OS Icon Sequence</h5>
+						</div>
+						<img class="card-img-top" src="img/icons1.png" alt="Card image cap">
+						<img class="card-img-top" src="img/icons2.png" alt="Card image cap">
+						<div class="modal-body">
+							<p1 class="text-light">
+								This is a series of icons I worked on for my Graphic Design class. I wanted to create a set of simple, minimalist icons that could be found in an 
+								operating system's settings menu. They work on both dark and light backgrounds, and have a customizable accent color. 
+							</p1>
+						</div>
+					</div>
+
+					<!-- <img class="img-fluid mb-3" style="border-radius: .5rem;" src="img/kopakasword.png">
+					<p1 class="text-light">
+						This is a Bioncile piece (Kopaka Mata's Ice Sword) that I modeled in my 3D Modeling class. I own one of these pieces so I used that as
+						my primary reference, as well as using a few pictures of the sword.
+					</p1> -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<footer class="bg-dark-alt" style="margin-top:100px">
 		<div class="container p-4" style="height:150px">
 			<a class="text-muted" href="./">Home</a>
 			<span> - </span>
 			<a class="text-muted" href="about">About</a>
+			<span class="text-muted float-right">Don't steal my stuff please!</a>
 		</div>
 	</footer>
 </body>
