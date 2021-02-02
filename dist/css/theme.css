@@ -39,18 +39,21 @@
   box-shadow: 0 0 0 0;
 }
 
+.btn-secondary {
+	color: #fff;
+	background-color: #6c747a;
+	border-color: #6c747a;
+  }
+
 .text-muted {
 	color: #c5c5c5 !important;
+}
+
+.text-link {
+	color: #f8f9fa !important;
+	text-decoration: underline;
 }
 
 .pointer {
 	cursor: pointer;
 }
-
-/* .modal-header {
-	border-bottom: 0;
-}
-
-.modal-footer {
-	border-top: 0;
-} */

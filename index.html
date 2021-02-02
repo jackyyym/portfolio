@@ -41,7 +41,7 @@
 	<div class="container p-4">
 
 		<div class="my-4">
-			<h1 class="text-light font-weight-bold mb-4">Hi! Welcome to my site</h1>
+			<h1 class="text-light font-weight-bold mb-4">Hi! Welcome to my page</h1>
 			
 		</div>
 
@@ -55,32 +55,31 @@
 			<div class="container p-0" href="my-work.html">
 				<div class="carousel-inner" style="border-radius: .5rem;">
 					<div class="carousel-item active">
-						<img data-toggle="modal" data-target="#modal_card3" class="d-block w-100 pointer" src="./img/artifact_carousel.png" alt="First slide">
+						<img data-toggle="modal" data-target="#modal_card3" class="d-block w-100 pointer" src="./img/artifact_carousel1.png" alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img data-toggle="modal" data-target="#modal_card1" class="d-block w-100 pointer" src="./img/watershader_carousel.png" alt="Second slide">
+						<img data-toggle="modal" data-target="#modal_card1" class="d-block w-100 pointer" src="./img/artifact_carousel2.png" alt="Second slide">
 					</div>
 					<div class="carousel-item">
-						<img data-toggle="modal" data-target="#modal_card3" class="d-block w-100 pointer" src="./img/artifact_carousel.png" alt="Third slide">
+						<img data-toggle="modal" data-target="#modal_card3" class="d-block w-100 pointer" src="./img/watershader_carousel.png" alt="Third slide">
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<p1 class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing 
-			elit. Duis ullamcorper vehicula facilisis. Morbi sit amet dignissim neque. 
-			Cras in nisl metus. In convallis convallis leo ac pulvinar. Duis maximus 
-			lorem mi, et fringilla erat condimentum in. Aenean nisi mauris, euismod in 
-			augue eget, sollicitudin rutrum lectus. Vivamus euismod turpis nisl, in maximus 
-			nunc pellentesque quis. Mauris sit amet nunc iaculis, tincidunt magna nec, 
-			lobortis velit. Integer hendrerit faucibus mi, eu tincidunt odio feugiat sit 
-			amet. Etiam in diam augue. Aliquam sed neque finibus magna pellentesque cursus. 
-			Morbi venenatis malesuada lacus, vel tempus dui egestas id. </p1>
+		<p1 class="text-light">I'm Jacky! I'm 23 and I recently graduated from University of Massachusetts Lowell, where I received a 
+			B.S. in Computer Science and Minors in Graphic Design and Mathematics. <br><br>
+
+			I’ve had a passion for computers since a young age and found an interest in programming while taking computer 
+			science classes offered at my high school. Since then I’ve worked on video games, a virtual reality interactive 
+			experience, a psychology research tool, and a variety of other educational/personal projects. Aside from 
+			programming I love reading, video games, computer hardware (especially advances in AR/VR), and I’m an avid
+			music listener. Check out some of my work below, or hop over to my <a class="text-link" href="about">About</a> page to read more or connect with me!</p1>
 
 		<!-- CARDS -->
 		<div class="my-4">
 			<h1 class="text-light font-weight-bold mb-4">My Work</h1>
-			<p1 class="text-light">Hi! Here are some select examples of the work ive done both in and out of school. </p1>
+			<p1 class="text-light">Here are some select examples of the work I've done both in and out of school. </p1>
 		</div>
 
 		<div class="row my-4">
@@ -163,22 +162,27 @@
 					</button>
 				</div>
 				<div class="modal-body p-4">
-					<div class="embed-responsive embed-responsive-16by9 mb-2">
+					<div class="embed-responsive embed-responsive-16by9 mb-3">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ExCLY9iTTgg" allowfullscreen></iframe>
 					</div>
-					<p1 class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing 
-						elit. Duis ullamcorper vehicula facilisis. Morbi sit amet dignissim neque. 
-						Cras in nisl metus. In convallis convallis leo ac pulvinar. Duis maximus 
-						lorem mi, et fringilla erat condimentum in. Aenean nisi mauris, euismod in 
-						augue eget, sollicitudin rutrum lectus. Vivamus euismod turpis nisl, in maximus 
-						nunc pellentesque quis. Mauris sit amet nunc iaculis, tincidunt magna nec, 
-						lobortis velit. Integer hendrerit faucibus mi, eu tincidunt odio feugiat sit 
-						amet. Etiam in diam augue. Aliquam sed neque finibus magna pellentesque cursus. 
-						Morbi venenatis malesuada lacus, vel tempus dui egestas id. </p1>
+					<p1 class="text-light">This is a project I worked on for Computer Graphics II during my last semester at UML. It was created in 
+						the Unity Game Engine using ShaderLab. I was inspired by the water shaders from GameCube/Wii-era Nintendo games and wanted 
+						to try to recreate a similar effect from scratch. <br><br>
+
+						It employs similar techniques used in those games, which mainly involves heavy use of scrolling textures. The main water texture
+						scrolls, and a distortion map is scrolled in the opposite direction on top of that to achieve the wavy water effect. The shimmers
+						on the surface of the water is created by diagonally scrolling two noise textures on top of eachother in opposite directions. Then,
+						the pixels over a certain brightness are culled, creating the more subtle shimmering effect. Some of the brightest pixels are re-added,
+						which creates the white highlights on the water.<br><br>
+
+						In the future, I'd like to add more features such as waves using a height-map, foam around the edges of the water, and splashes for any
+						characters moving through the water. All the art and code is mine except for a water distortion texture, which was from 
+						<a class="text-link" target="_blank" href="https://catlikecoding.com/unity/tutorials/flow/texture-distortion/" >a tutorial hosted on catlikecoding.com</a>
+					</p1>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<a type="button" class="btn btn-primary" target="_blank" href="https://github.com/jackyyym/toon-water-shader">GitHub</a>
 				</div>
 			</div>
 		</div>
@@ -194,11 +198,26 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					pleajustice.org
+					<img class="img-fluid mb-3" src="img/pleajustice_modal.png">
+					<p1 class="text-light">This was something I worked on from May 2019 - September 2020. I was in a small team under Professor Miko Wilford and 
+						Professor Misha Rabinovich to develop a tool used to do research on plea deals and plea bargaining. The goal for this project is that any 
+						psychology or criminal justice researchers could utilize it. <br><br>
+
+						Conventional methods for studies on plea bargaining usually just involve a vignette where the participant reads a story off of a paper.
+						Research shows that having little immersion can make it difficult for participants to answer as if they were actually the ones involved.
+						A tool like this, with a customizable avatar, can greatly increase immerson for the participant. <br><br>
+
+						I worked the avatar customizer, the simulation, the Qualtrics surveys, did some animation touch ups, and helped with the design of the 
+						simulation customization UI. The simulation itself uses the CanvasJS JavaScript libraries to interface with HTML5 animations exported from 
+						Adobe Animate. I also helped set up studies for other researchers who wanted to use the software while the more user-friendly customization and deployment 
+						tools were still under development. <br><br>
+
+						<span class="h5">Read more and demo the software on the Plea Justice Website!</span>
+					</p1>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<a type="button" class="btn btn-primary" target="_blank" href="https://pleajustice.org/">Plea Justice Website</a>
 				</div>
 			</div>
 		</div>
@@ -214,16 +233,27 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
+					<div class="embed-responsive embed-responsive-16by9 mb-3">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N1RTf4f6lgQ" allowfullscreen></iframe>
 					</div>
-					<div class="embed-responsive embed-responsive-16by9">
+					<p1 class="text-light">This was for a group project in my Interactive Media II class. The class was interesting as it paired
+						animation and interactive media majors with computer science majors to make something using Augmented or Virtual Reality. 
+						Our group was me as programmer, Gus Sajisevi creating the art and assets, and Samuel Marquis creating the music. <br><br>
+
+						The idea behind our project was that we wanted to create an interactive museum experience in virtual reality. Sound is the
+						main focus of the museum, and the virtual exhibits in the various rooms of the museum all offer different ways for the user
+						to control and play with the music they hear. <br><br>
+
+						Check out some uncut footage in the video below! The Red Room is my personal favorite part. Links to my group members' work 
+						is in the video description.
+					</p1>
+					<div class="embed-responsive embed-responsive-16by9 mt-3">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/52peqUjmVNg" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<a type="button" class="btn btn-primary" target="_blank" href="https://github.com/jackyyym/Artifact">GitHub</a>
 				</div>
 			</div>
 		</div>
@@ -239,13 +269,20 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
+					<div class="embed-responsive embed-responsive-16by9 mb-3">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6zClhMZA1Lg?enablejsapi=1" allowfullscreen></iframe>
-					  </div>
+					</div>
+					<p1 class="text-light">
+						This was a project done in the Unity Engine for my game design class over the course of about a month. I wanted to create a simple and
+						fun mobile game where you drill downwards as far as you can while mining gold ore and avoiding rocks. On Android, it is controlled by 
+						touching the left and right halves of the screen to steer. <br><br>
+
+						All the art and code is by me except for the ground texture.
+					</p1>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<a type="button" class="btn btn-primary" target="_blank" href="https://github.com/jackyyym/Mine-Time/">GitHub</a>
 				</div>
 			</div>
 		</div>
@@ -261,13 +298,17 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
+					<div class="embed-responsive embed-responsive-16by9 mb-3">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lNqJsNSdzhk" allowfullscreen></iframe>
-					  </div>
+					</div>
+					<p1 class="text-light">
+						Working Class Chameleon is a very short and silly game made in the Unity Engine about a chameleon going through his day to day activities. 
+						I worked on this with one partner, Filipo Scarfo, for a Game Design class I took in high school. I did the programming, Phil did the art/music, and 
+						we collaborated on game design and level design. A few of the final levels remain unfinished.
+					</p1>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
 		</div>
@@ -283,13 +324,20 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
+					<div class="embed-responsive embed-responsive-16by9 mb-3">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C2CYPDAQiQc" allowfullscreen></iframe>
-					  </div>
+					</div>
+					<p1 class="text-light">
+						BomberBird was a project done using Adobe Flash for a Game Design course I took in high school, and was one of the first games I created
+						when I was still early into my programming career. I worked on this with Filipo Scarfo, with him doing the art and me programming.
+						The music is taken from various Sonic the Hedgehog games. <br><br>
+						
+						This was our attempt at recreating the popular game, Bomberman, in Flash with a fun spin on the theme. The game features up to 4 players, 
+						randomly placed powerups, and slight randomization to the generation of levels.
+					</p1>
 				</div>
 				<div class="modal-footer">
 					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
 		</div>
