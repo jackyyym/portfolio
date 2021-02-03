@@ -5949,9 +5949,8 @@ button.close {
   opacity: 0.5;
 }
 
-.carousel-control-prev:hover, .carousel-control-prev:focus,
-.carousel-control-next:hover,
-.carousel-control-next:focus {
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
   color: #fff;
   text-decoration: none;
   outline: 0;
