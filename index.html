@@ -11,12 +11,14 @@
 	<script src="./dist/js/bootstrap.min.js"></script>
 	<script>
 		// Used to stop embedded youtube videos when modal is closed
-		function stopVideos() {
-			$('.embed-responsive-item').each(function(){
-				var _src = $(this).attr("src");
-				$(this).attr("src", _src);
+		$(document).ready(function() {
+			$('.modal').on('hide.bs.modal', function(e) {
+				$('.embed-responsive-item').each(function() {
+					var _src = $(this).attr("src");
+					$(this).attr("src", _src);
+				});
 			});
-		}
+		});
 	</script>
 
 	<style>
@@ -88,10 +90,10 @@
 					<img class="card-img-top" src="img/watershader_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<div class="col">
-							<h5 class="font-weight-bold mb-0">Toon Water Shader</h5>
+							<h5 class=" mb-0">Toon Water Shader</h5>
 						</div>
 						<div class="col">
-							<p1 class="float-right mb-0">Fall 2020</p1>
+							<p1 class="float-right font-italic mb-0">Fall 2020</p1>
 						</div>
 					</div>
 				</div>
@@ -101,10 +103,10 @@
 					<img class="card-img-top" src="img/pleajustice_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<div class="col">
-							<h5 class="font-weight-bold mb-0">The Plea Justice Project</h5>
+							<h5 class="mb-0">The Plea Justice Project</h5>
 						</div>
 						<div class="col">
-							<p1 class="float-right mb-0">Spring 2019 - Fall 2020</p1>
+							<p1 class="float-right font-italic mb-0">Spring 2019 - Fall 2020</p1>
 						</div>
 					</div>
 				</div>
@@ -117,10 +119,10 @@
 					<img class="card-img-top" src="img/artifact_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<div class="col">
-							<h5 class="font-weight-bold mb-0">Artifact</h5>
+							<h5 class="mb-0">Artifact</h5>
 						</div>
 						<div class="col">
-							<p1 class="float-right mb-0">Spring 2019</p1>
+							<p1 class="float-right font-italic mb-0">Spring 2019</p1>
 						</div>
 					</div>
 				</div>
@@ -130,10 +132,10 @@
 					<img class="card-img-top" src="img/minetime_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<div class="col">
-							<h5 class="font-weight-bold mb-0">Mine Time</h5>
+							<h5 class="mb-0">Mine Time</h5>
 						</div>
 						<div class="col">
-							<p1 class="float-right mb-0">Spring 2018</p1>
+							<p1 class="float-right font-italic mb-0">Spring 2018</p1>
 						</div>
 					</div>
 				</div>
@@ -146,10 +148,10 @@
 					<img class="card-img-top" src="img/wcc_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<div class="col">
-							<h5 class="font-weight-bold mb-0">Working Class Chameleon</h5>
+							<h5 class="mb-0">Working Class Chameleon</h5>
 						</div>
 						<div class="col-3">
-							<p1 class="float-right mb-0">Spring 2016</p1>
+							<p1 class="float-right font-italic mb-0">Spring 2016</p1>
 						</div>
 					</div>
 				</div>
@@ -159,29 +161,81 @@
 					<img class="card-img-top" src="img/bomberbird_card.png" alt="Card image cap">
 					<div class="row align-items-center p-3">
 						<div class="col">
-							<h5 class="font-weight-bold mb-0">BomberBird</h5>
+							<h5 class="mb-0">BomberBird</h5>
 						</div>
 						<div class="col">
-							<p1 class="float-right mb-0">Spring 2015</p1>
+							<p1 class="float-right font-italic mb-0">Spring 2015</p1>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<button type="button" class="btn btn-xl btn-primary float-right" data-toggle="modal" data-target="#modal_other">Other Works</a>
+		<!-- OTHER WORKS -->
+		<div class="collapse" id="collapse_otherwork">
+			<div class="row">
+				<div class="col">
+					<div data-toggle="modal" data-target="#modal_card7" class="card bg-dark-alt hover-expand pointer">
+						<img class="card-img-top" src="img/snakegame_card.png" alt="Card image cap">
+						<div class="row align-items-center p-3">
+							<div class="col">
+								<h5 class=" mb-0">Snake Shooter</h5>
+							</div>
+							<div class="col">
+								<p1 class="float-right font-italic mb-0">Spring 2020</p1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div data-toggle="modal" data-target="#modal_card8" class="card bg-dark-alt hover-expand pointer">
+						<img class="card-img-top" src="img/kopakasword_card.png" alt="Card image cap">
+						<div class="row align-items-center p-3">
+							<div class="col">
+								<h5 class="mb-0">Kopaka's Ice Sword</h5>
+							</div>
+							<div class="col">
+								<p1 class="float-right font-italic mb-0">Spring 2020</p1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row justify-content-center my-4">
+				<div data-toggle="modal" data-target="#modal_card9" class="card bg-dark-alt hover-expand pointer w-50">
+					<img class="card-img-top" src="img/icons_card.png" alt="Card image cap">
+					<div class="row align-items-center p-3">
+						<div class="col">
+							<h5 class="mb-0">OS Icon Series</h5>
+						</div>
+						<div class="col">
+							<p1 class="float-right font-italic mb-0">Fall 2019</p1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<button type="button" id="otherwork" class="btn btn-xl btn-primary text-center" data-toggle="collapse" data-target="#collapse_otherwork" aria-expanded="false" aria-controls="collapse_otherwork">
+				<span class="expanded">Show Less</span>
+				<span class="collapsed">Show More</span>
+			</button>
+		</div>
+		
 
 	</div>
 
 	<!-- MODALS -->
 
 	<!-- TOON WATER SHADER -->
-	<div class="modal fade" id="modal_card1" onclick="stopVideos()" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modal_card1" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt modal-shadow">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Toon Water Shader</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -205,19 +259,19 @@
 					</p1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<a type="button" class="btn btn-primary" target="_blank" href="https://github.com/jackyyym/toon-water-shader">GitHub</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Plea Justice -->
-	<div class="modal fade" id="modal_card2" onclick="stopVideos()" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modal_card2" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">The Plea Justice Project</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -240,19 +294,19 @@
 					</p1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<a type="button" class="btn btn-primary" target="_blank" href="https://pleajustice.org/">Plea Justice Website</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- ARTIFACT -->
-	<div class="modal fade" id="modal_card3" onclick="stopVideos()" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modal_card3" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Artifact</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -276,19 +330,19 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<a type="button" class="btn btn-primary" target="_blank" href="https://github.com/jackyyym/Artifact">GitHub</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- MINE TIME -->
-	<div class="modal fade" id="modal_card4" onclick="stopVideos()" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modal_card4" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Mine Time</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -305,19 +359,19 @@
 					</p1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<a type="button" class="btn btn-primary" target="_blank" href="https://github.com/jackyyym/Mine-Time/">GitHub</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- WORKING CLASS CHAMELEON -->
-	<div class="modal fade" id="modal_card5" onclick="stopVideos()" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modal_card5" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Working Class Chameleon</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -332,18 +386,18 @@
 					</p1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- BOMBERBIRD -->
-	<div class="modal fade" id="modal_card6"  onclick="stopVideos()" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modal_card6"  tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
-					<h3 class="modal-title" id="exampleModalLabel">Bomerbird</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<h3 class="modal-title" id="exampleModalLabel">BomerBird</h3>
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -361,7 +415,78 @@
 					</p1>
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SNAKE SHOOTER -->
+	<div class="modal fade" id="modal_card7"  tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLabel">Snake Shooter</h3>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top mb-3" src="img/snakegame.png" alt="Card image cap">
+					<p1 class="text-light">
+						These are some assets that I created in Adobe Illustrator for a mobile game that my cousin was developing. This game would be somewhere between 
+						a Snake Game and a Tower Defense game, where you would pilot your snake around the map using your various towers to shoot at enemies. You could 
+						spend currency to add new segments to your body, as well as upgrade existing ones.
+					</p1>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- KOPAKA SWORD -->
+	<div class="modal fade" id="modal_card8"  tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLabel">Kopaka's Ice Sword</h3>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top mb-3" src="img/kopakasword.png" alt="Card image cap">
+					<p1 class="text-light">
+						This is a Bioncile piece that I modeled in Autodesk Maya for my 3D Modeling class. I own one of these pieces so I used that as
+						my primary reference, as well as using a few pictures of the sword.
+					</p1>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- KOPAKA SWORD -->
+	<div class="modal fade" id="modal_card9"  tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content bg-dark-alt">
+				<div class="modal-header">
+					<h3 class="modal-title" id="exampleModalLabel">OS Icon Series</h3>
+					<button type="button" class="close text-light" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="img/icons1.png" alt="Card image cap">
+					<img class="card-img-top mb-3" src="img/icons2.png" alt="Card image cap">
+					<p1 class="text-light">
+						This is a series of icons I worked on for my Graphic Design class. I wanted to create a set of simple, minimalist icons that could be found in an 
+						operating system's settings menu. They work on both dark and light backgrounds, and have a customizable accent color. 
+					</p1>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -373,7 +498,7 @@
 			<div class="modal-content bg-dark-alt">
 				<div class="modal-header">
 					<h3 class="modal-title" id="exampleModalLabel">Other Works</h3>
-					<button type="button" onclick="stopVideos()" class="close text-light" data-dismiss="modal">
+					<button type="button" class="close text-light" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
 				</div>
@@ -426,7 +551,7 @@
 					</p1> -->
 				</div>
 				<div class="modal-footer">
-					<button type="button" onclick="stopVideos()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>

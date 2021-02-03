@@ -72,3 +72,12 @@
 .hover-expand:hover {
 	transform: scaleY(1.05) scaleX(1.05);
   }
+
+.modal-footer {
+	border-top: 0;
+}
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
