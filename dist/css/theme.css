@@ -116,7 +116,17 @@
 	border-bottom: 3px solid #20be94;
 }
 
-footer {
-	margin-top: 100px;
-	height: 100px;
+html {
+	position: relative;
+	min-height: 100%;
+  }
+body {
+	margin-bottom: 200px; /* Margin bottom by footer height */
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px; /* Set the fixed height of the footer here */
+	line-height: 60px; /* Vertically center the text there */
 }
