@@ -115,3 +115,8 @@
 	display:inline-block;
 	border-bottom: 3px solid #20be94;
 }
+
+footer {
+	margin-top: 100px;
+	height: 100px;
+}
