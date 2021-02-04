@@ -60,19 +60,27 @@
 							<input type="text" name="subject" class="form-control" required />
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="form-row mb-2">
 						<div class="form-group col">
 							<label>Message: </label>  
 							<textarea name="message" class="form-control" required ></textarea>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="form-row mb-2">
 						<div class="form-group col">
-							<div data-netlify-recaptcha="true"></div>
-							<button type="submit" class= "btn btn-primary">Send</button> 
+							<div data-netlify-recaptcha="true" required></div>
+							<!-- <img class="rounded" src="img/captcha.png"> -->
 						</div>
 					</div>
-				  </form>
+					<div class="form-row">
+						<div class="form-group col">
+							<button type="submit" class="btn btn-primary btn-block">Send</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md p-3">
+				<h1>Placeholder Text</h1>
 			</div>
 		</div>
 	</main>
