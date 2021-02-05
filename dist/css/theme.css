@@ -63,6 +63,12 @@
 	color: #c5c5c5 !important;
 }
 
+@media (max-width:770px) {
+	.footer-hide{
+		font-size: 0;
+	}
+}
+
 .text-link {
 	color: #f8f9fa !important;
 	text-decoration: underline;
