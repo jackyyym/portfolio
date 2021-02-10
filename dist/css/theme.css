@@ -153,4 +153,29 @@ body {
 	justify-content: center !important;
 
 	margin-bottom: 0.5rem !important;
+
+	text-align: center;
+}
+
+.icon-img {
+	width: 96px;
+	height: 96px;
+}
+
+@media (max-width:770px) {
+	.icon-img {
+		width: 64px;
+		height: 64px;
+	}
+	
+}
+
+p1 {
+	font-size: 17px;
+}
+
+@media (max-width:770px) {
+	p1 {
+		font-size: 15px;
+	}
 }
